@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proteja-se Contra Fraudes</title>
+  <link rel="icon" type="image/x-icon" href="asts/Favicon(Eudora).jpeg">
+  <link rel="stylesheet" href="res/javaScript.js">
+  <link rel="stylesheet" href="res/styles.css">
+  <link rel="stylesheet" href="res/botao.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .wrapper {
+      flex: 1;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+    .menu.show {
+      display: flex;
+    }
+    @media (min-width: 768px) {
+      .menu {
+        display: flex;
+      }
+      .menu-icon {
+        display: none;
+      }
+    }
+    .menu-item img {
+      margin-bottom: -10px;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+    }
+    .menu-icon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .menu-icon.up {
+      top: 10px;
+    }
+    .menu-icon .left {
+      left: 30px;
+    }
+    .menu.show {
+      display: flex;
+    }
+    .highlight {
+      background-color: #d2b48c; 
+      color: #000; 
+      padding: 5px;
+      border-radius: 3px;
+      margin: 0;
+      display: inline;
+      font-style: italic; 
+    }
+    .footer {
+      background-color: #000;
+      padding: 20px; 
+      color: #fff; 
+      text-align: center; 
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    body {
+      background-color: #dac09e; 
+      margin: 0; 
+      padding: 0; 
+    }
+    body {
+    font-style: italic;
+     font-size: large;
+      margin: 0; 
+      padding: 0; 
+      color: #000; 
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex flex-column wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom shadow-sm mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="/" style="color: white;"><b>Representante Eudora</b></a>
+        <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Espaço vazio para manter o alinhamento -->
+          </ul>
+          <div class="d-flex">
+            <div class="search me-3">
+              <input type="text" placeholder="O que você está...">
+              <div class="list"></div>
+              <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+            </div>
+            <div class="nav-item">
+              <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
+                  title="5 produto(s) no carrinho"><small>5</small></span>
+              <a href="/carrinho.html" class="nav-link text-white">
+                  <i class="bi bi-cart" style="font-size:24px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="flex-fill">
+      <div class="container">
+        <h2>Mantenha seus dados seguros: proteja-se contra fraudes!</h2>
+            <p>O Grupo Boticário se empenha em proteger seus dados com controles rigorosos contra fraudes e verificação constante durante o cadastro. No entanto, como qualquer plataforma digital, estamos sujeitos a tentativas de fraude e uso indevido de informações pessoais coletadas em vazamentos ou fontes ilícitas.
+            Para se proteger, siga nossas dicas de segurança:</p>
+           <h2> 1.Cuidado com quem você compartilha seus dados:</h2>
+            <P>Somente forneça informações pessoais a empresas confiáveis e de reputação conhecida.</p>
+            <h2> 2.Desconfie de mensagens suspeitas</h2>
+            <p> cuidadosamente a origem de emails e sites antes de fornecer dados. Confirme se eles são realmente do Grupo Boticário.</p>
+            <h2> 3.Utilize os canais oficiais:</h2>
+            <p>Comunique-se com o Grupo Boticário por meio dos canais oficiais disponíveis neste site.</p>
+            <h2>4.Senhas fortes e atualizadas:</h2>
+            <p>Crie senhas complexas e únicas para cada plataforma, e altere-as periodicamente.</p>
+            <h2>5.Verifique se seus dados foram comprometidos:</h2>
+            <p>Existem ferramentas online que permitem verificar se seus dados foram expostos em vazamentos recentes.</p>
+            <h2>6.Navegação segura:</h2>
+            <p>Utilize dispositivos seguros e privados para navegar na internet, garantindo a proteção de suas informações.</p>
+            <h2>7.Limpe o cache do seu navegador:</h2>
+            <p>Para evitar o armazenamento de dados e preferências, limpe o cache do seu navegador periodicamente.</p>
+            <h2>8.Desconfie de ofertas irresistíveis:</h2>
+            <p>Links com promoções que prometem brindes gratuitos ou preços muito abaixo do normal podem ser falsos. Verifique a autenticidade do link em sites confiáveis, como o detector de sites do ReclameAqui: https://www.reclameaqui.com.br/detector-site-confiavel/.
+            Se seus dados foram utilizados indevidamente, utilize nosso Portal de Privacidade para se descadastrar.
+            Sua segurança é nossa prioridade!</p>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 col-md-4 text-center">
+          © 2024 - Representante Eudora<br>
+          Av. Barão de Itapura, 1080 - Vila Itapura, Campinas - SP, 13020-431 <br>
+          CNPJ 00.000.000/0000-00
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="Politica de privacidade.HTML" class="text-decoration-none text-white">Política de privacidade</a><br>
+          <a href="Termos de uso.HTML" class="text-decoration-none text-white">Termos de uso</a><br>
+          <a href="Quem Somos.HTML" class="text-decoration-none text-white">Quem Somos</a><br>
+          <a href="Proteja-se contra fraudes.HTML" class="text-decoration-none text-white">Proteja-se contra fraudes</a>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="confirmarcontato.html" class="text-decoration-none text-white">confirmarcontato</a><br>
+          E-mail: <a href="mailto:sandramarucci4@gmail.com" class="text-decoration-none text-white">sandramarucci4@gmail.com</a><br>
+          Telefone: <a href="tel:1981473594" class="text-decoration-none text-white">(19) 981473594</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
